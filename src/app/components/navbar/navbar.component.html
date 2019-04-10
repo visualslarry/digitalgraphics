@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md navbar-light fixed-top" data-aos="fade-in" data-aos-easing="ease-in">
+    <div class="container bg-transparent">
+      <a class="navbar-brand" href="#" routerLink="/" (click)="updateNavbarLink('/')">Digital Graphics</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mt-custom">
+            <a class="nav-link" [class.active]="linkActive[0][1]" (click)="updateNavbarLink('/')" href="#" routerLink="/" id="accueil">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="linkActive[1][1]" (click)="updateNavbarLink('/web')" href="#" routerLink="/web" id="web">Création site web</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="linkActive[2][1]" (click)="updateNavbarLink('/graphisme')" href="#" routerLink="/graphisme" id="graphisme">Graphisme</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="linkActive[3][1]" (click)="updateNavbarLink('/marketing')" href="#" routerLink="/marketing" id="marketing">Marketing Digital</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="linkActive[4][1]" (click)="updateNavbarLink('/photographie-video')" href="#" routerLink="/photographie-video" id="photographie-video">Photographie / Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="linkActive[5][1]" (click)="updateNavbarLink('/contact')" href="#" routerLink="/contact" id="contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
