@@ -66,7 +66,7 @@
               <p class="order-title">03.</p>
               <h5 class="card-title mb--">Booster vos ventes</h5>
               <p class="card-text">Il fournit une preuve sociale, 90% des consommateurs affirment que les avis en ligne influencent leurs décisions d'achat.</p>
-              <a href="/creation-site-internet#pricing" class="btn btn-primary">Site E-Commerce</a> 
+              <a (click)="scrollTo(pricing)" class="btn btn-primary">Site E-Commerce</a> 
             </div>
         </div>
       </div>  
@@ -303,8 +303,8 @@
     </div>
 
     
-    <div class="row">
-      <div class="col-md my-3" id="pricing">
+    <div class="row" id="pricing" #pricing>
+      <div class="col-md my-3">
           <div class="card no-border my-3 h-100" data-aos="fade-in"  data-aos-duration="500" data-aos-easing="ease-in">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title mt-auto">Gestion de l'hébergement</h5>

@@ -1,0 +1,15 @@
+alias ng="C:/Users/Larry\ Lam/AppData/Roaming/npm/node_modules/@angular/cli/bin/ng"
+ng serve
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/visualslarry/digitalgraphics.git
+git push -u origin master
+
+npm i angular-cli-ghpages --save-dev
+ng build --base-href "./"
+npx ngh --dir=dist/digitalgraphics
+
+git config --global user.name "Larry Visuals"
+git config --global user.email visualslarry@gmail.com

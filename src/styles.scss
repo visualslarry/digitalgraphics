@@ -60,7 +60,7 @@ a{
     .nav-link{
         padding-left:10px!important;
         padding-right:10px!important;
-    }
+	}
 }
 
 a:hover{
@@ -163,6 +163,7 @@ transition: width .3s cubic-bezier(.19,1,.22,1);
 /* buttons */
 
 .btn-primary {
+	color: $white!important;
     background-color: $primary-color!important;
 	border-color: $primary-color!important;
 	&.btn-primary:hover {
@@ -415,7 +416,7 @@ transition: width .3s cubic-bezier(.19,1,.22,1);
 
     min-height: 80px;
     box-shadow: 0 0 0 0 rgba(0,0,0,.08);
-    background-color: white;
+    background-color: $white;
     padding: 0px 1rem;
     
     a{

@@ -20,6 +20,7 @@ export class NavbarComponent implements OnInit {
   ];
 
   constructor(location: PlatformLocation) { 
+    // window.scrollTo({ top: 0, behavior: 'smooth' });
     // console.log(window.location.pathname);
     location.onPopState(() => {
       this.updateNavbarLink(window.location.pathname);
@@ -35,10 +36,9 @@ export class NavbarComponent implements OnInit {
     });
     $(document).ready(function() {
       $('.navbar-collapse').removeClass('show');
-
       document.getElementById("scroll-progress-bar").style.width = "0%";
     });
-    location.reload;
+    // location.reload;
     // console.log(this.linkActive);
   }
 

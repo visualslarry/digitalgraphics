@@ -21,12 +21,10 @@ export class WebComponent implements OnInit {
           // trick the Router into believing it's last link wasn't previously loaded
           this.router.navigated = false;
           // if you need to scroll back to top, here is the right place
-          window.scrollTo(0, 0);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
        }
    });
   }
-
-
   ngOnInit() {
     $(document).ready(function() {
       AOS.init();
@@ -40,5 +38,10 @@ export class WebComponent implements OnInit {
         }
       });
     });
+  }
+
+  scrollTo(el: HTMLElement)
+  {
+      el.scrollIntoView({ block: 'end',  behavior: 'smooth' });
   }
 }
