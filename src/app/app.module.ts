@@ -16,7 +16,7 @@ import { PhotographieVideoComponent } from './components/photographie-video/phot
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'web', component: WebComponent},
+  { path: 'creation-site-internet', component: WebComponent},
   { path: 'graphisme', component: GraphismeComponent},
   { path: 'marketing', component: MarketingComponent},
   { path: 'photographie-video', component: PhotographieVideoComponent},

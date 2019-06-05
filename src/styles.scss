@@ -2,20 +2,57 @@
 @import '~animate.css/animate.min.css';
 $primary-light:#FFB22C;
 $primary-color:#FFA200;
-$primary-color-rgb:(255,162,0);
 $primary-dark:#E39103;
+// $primary-light:#6581F6;
+// $primary-color:#3E61F4;
+// $primary-dark:#2C4CD1;
+$primary-color-rgb:(255,162,0);
 $primary-black:#131313;
 $white: #ffffff;
 
 
 /************ GENERAL *************/
 
+html{
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+img{
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
 .no-border{
     border: none!important;
 }
 .npx{
     padding-left: 0px!important;
-    padding-right: 0px!important; 
+	padding-right: 0px!important; 
+	overflow: hidden;
+}
+
+.full-height{
+    height: 100vh;
+    max-height: 1080px;
+}
+.bg-dark {
+    background-color: $primary-black!important;
+}
+.absolute-vertical-center{
+	position: relative;
+	top: 50%;
+	
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 a{
@@ -33,7 +70,40 @@ a:hover{
 h1, h2, h3 {
 	color: $primary-black;
 }
+.display-md-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+	line-height: 1.2;
+	
+	@media (max-width: 768px)
+	{    
+		font-size: 2.5em;
+	}
+}
+.transparent-title
+{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.05);
+    margin-bottom: -75px;
+	margin-left: -20px;
+	
+	@media (max-width: 768px)
+	{
+		display:none;
+	}
+}
+.order-title
+{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.08);
+    margin-bottom: -40px;
+}
 
+.text-bold{
+	font-weight: bold;
+}
 /* Spacing */
 
 .py-default
@@ -52,6 +122,42 @@ h1, h2, h3 {
 
 	}
 
+}
+
+.mobile-p5
+{
+	@media (max-width: 768px) {  
+		padding-top:5vh!important; 
+	}
+	@media (max-width: 576px) {  
+		padding-top:10vh!important; 
+	}
+
+}
+
+.mb--
+{
+	margin-bottom: -5px!important;
+}
+.mt--
+{
+	margin-top: -15px!important;
+}
+
+.mw-4
+{
+	max-width: 400px;
+	@media (max-width: 576px) {  
+		max-width: 280px;
+	}
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+height: 3px;
+background: $primary-light;
+width: 0%;
+transition: width .3s cubic-bezier(.19,1,.22,1);
 }
 
 /* buttons */
@@ -125,14 +231,26 @@ h1, h2, h3 {
 		}
 	}
 }
-
+.hidden{
+	display: none;
+}
 .hero {
 	position: relative;
 	height:100vh;
+	max-height: 1080px;	
 }
+
+.hero-web
+{
+	background-color: $primary-black;
+	overflow: hidden;
+	height:75vh;
+    max-height: 1080px;
+}
+
 .h2-mobile {
 	
-	font-size: 30px;
+	font-size: 27px;
     line-height: 40px;
 	letter-spacing: -0.1px;
 	@media (min-width: 1024px){	
@@ -246,25 +364,48 @@ h1, h2, h3 {
 	}
 }
 
+@media (min-width: 1921px) {
+	.hero {
+		padding-top: 120px;
+		margin-bottom: 80px;
+	}
+	.divider
+	{
+		margin-bottom: 80px;
+	}
+}
+
 
 /************ CARDS *************/
 
-.transparent-title
+.card-transparent-title
 {
     font-size: 60px;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 0;
+	color: rgba(0, 0, 0, 0.1);
+	margin-bottom: -40px;
+}
+
+.card-title{
+	font-weight: 500;
+	font-size: 22px;
 }
 
 .custom-card
 {
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-out;
-    border-color:transparent;
     &:hover {
         cursor: pointer;
         box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+      }
+}
+.custom-card-dark
+{
+    transition: box-shadow 0.3s ease-out;
+    background-color:$primary-black;
+    &:hover {
+        cursor: pointer;
       }
 }
 
@@ -275,7 +416,7 @@ h1, h2, h3 {
     min-height: 80px;
     box-shadow: 0 0 0 0 rgba(0,0,0,.08);
     background-color: white;
-    padding: 20px 1rem;
+    padding: 0px 1rem;
     
     a{
         color:$primary-black!important;
@@ -300,7 +441,28 @@ nav.navbar.solid-bg {
     transition: background-color .2s ease-in 0s, box-shadow .3s ease-in 0s;
 }
 
+.nav-progress-bar
+{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	background-color: #f1f1f1;
+    box-shadow: 0 3px 12px rgba(0,0,0,.05);
+	transition: opacity .3s ease-in 0s;
+	opacity: 0!important;
+}
+.nav-logo
+{
+	max-width: 200px;
+	@media (max-width: 992px) {  
+		max-width: 150px;
+	}
 
+}
+.opacity-1
+{
+	opacity: 1!important;
+}
 .padding-top
 {
     padding-top: 80px;

@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-light fixed-top" data-aos="fade-in" data-aos-easing="ease-in">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" data-aos="fade-in" data-aos-easing="ease-in">
     <div class="container bg-transparent">
-      <a class="navbar-brand" href="#" routerLink="/" (click)="updateNavbarLink('/')">Digital Graphics</a>
+      <a class="navbar-brand" href="#" routerLink="/" (click)="updateNavbarLink('/')"><img src="assets/img/logo.jpg" alt="Digital Graphics Logo" class="nav-logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -10,7 +10,7 @@
             <a class="nav-link" [class.active]="linkActive[0][1]" (click)="updateNavbarLink('/')" href="#" routerLink="/" id="accueil">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [class.active]="linkActive[1][1]" (click)="updateNavbarLink('/web')" href="#" routerLink="/web" id="web">Création site web</a>
+            <a class="nav-link" [class.active]="linkActive[1][1]" (click)="updateNavbarLink('/creation-site-internet')" href="#" routerLink="/creation-site-internet" id="creation-site-internet">Création de site internet</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [class.active]="linkActive[2][1]" (click)="updateNavbarLink('/graphisme')" href="#" routerLink="/graphisme" id="graphisme">Graphisme</a>
@@ -18,9 +18,9 @@
           <li class="nav-item">
             <a class="nav-link" [class.active]="linkActive[3][1]" (click)="updateNavbarLink('/marketing')" href="#" routerLink="/marketing" id="marketing">Marketing Digital</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" [class.active]="linkActive[4][1]" (click)="updateNavbarLink('/photographie-video')" href="#" routerLink="/photographie-video" id="photographie-video">Photographie / Video</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" [class.active]="linkActive[5][1]" (click)="updateNavbarLink('/contact')" href="#" routerLink="/contact" id="contact">Contact</a>
           </li>
@@ -28,3 +28,6 @@
       </div>
     </div>
 </nav>
+<div class="nav-progress-bar" data-aos="fade-in" data-aos-easing="ease-in">
+    <div class="progress-bar" id="scroll-progress-bar"></div>
+</div> 
