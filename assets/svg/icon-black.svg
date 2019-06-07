@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="90" viewBox="0 0 50 90">
+  <defs>
+    <clipPath id="clip-Logo_horizontal">
+      <rect width="50" height="90"/>
+    </clipPath>
+  </defs>
+  <g id="Logo_horizontal" clip-path="url(#clip-Logo_horizontal)">
+    <rect width="50" height="90" fill="#fff" fill-opacity="0.0"/>
+    
+    <g id="Groupe_99" data-name="Groupe 99" transform="translate(5 5)">
+      <path id="Tracé_65" data-name="Tracé 65" d="M6287.827,16843.279c.422,2.906-2.557-11.1,7.75-20.344s14.4-20.232,7.291-31.426c-.233.115-.976,12.357-8.98,19.809S6279.073,16831.262,6287.827,16843.279Z" transform="translate(-6269.168 -16766.836)" fill="#000000"/>
+      <path id="Tracé_66" data-name="Tracé 66" d="M6287.827,16843.279c.422,2.906-2.557-11.1,7.75-20.344s14.4-20.232,7.291-31.426c-.233.115-.976,12.357-8.98,19.809S6279.073,16831.262,6287.827,16843.279Z" transform="translate(-6283.729 -16791.51)" fill="#000000"/>
+      <path id="Tracé_67" data-name="Tracé 67" d="M6287.827,16843.279c.422,2.906-2.557-11.1,7.75-20.344s14.4-20.232,7.291-31.426c-.233.115-.976,12.357-8.98,19.809S6279.073,16831.262,6287.827,16843.279Z" transform="translate(-6276.044 -16779.779)" fill="#ffa200"/>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,6 @@
 
 (function(t, e) {
+    "use strict";
     var i = t.GreenSockGlobals = t.GreenSockGlobals || t;
     if (!i.TweenLite) {
         var s, n, r, a, o, l = function(t) {
