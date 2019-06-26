@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="564" height="608" viewBox="0 0 564 608">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_98" data-name="Rectangle 98" width="564" height="608" transform="translate(-18975 10992)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="lightning" transform="translate(18975 -10992)" clip-path="url(#clip-path)">
+    <path id="lightning-2" data-name="lightning" d="M-19164.957,11064l-174.439,270.468h136.732l-106.115,250.477,297.34-346.9h-108.271l108.271-174.048Z" transform="translate(467.279 -2.5)" fill="none" stroke="#ffa200" stroke-linejoin="round" stroke-width="30"/>
+  </g>
+</svg>

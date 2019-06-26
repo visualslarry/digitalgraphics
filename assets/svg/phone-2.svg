@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_97" data-name="Rectangle 97" width="500" height="500" transform="translate(-10229 19251)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="phone-2" transform="translate(10229 -19251)" clip-path="url(#clip-path)">
+    <g id="Groupe_110" data-name="Groupe 110" transform="translate(-10119.002 19251)">
+      <g id="Rectangle_96" data-name="Rectangle 96" fill="#ffa200" stroke="#ffa200" stroke-linejoin="round" stroke-width="25">
+        <rect width="285.71" height="500" rx="45" stroke="none"/>
+        <rect x="12.5" y="12.5" width="260.71" height="475" rx="32.5" fill="none"/>
+      </g>
+      <line id="Ligne_6" data-name="Ligne 6" x2="79.862" transform="translate(105 67.902)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="25"/>
+      <g id="Ellipse_38" data-name="Ellipse 38" transform="translate(120 412.137)" fill="#fff" stroke="#fff" stroke-width="1">
+        <circle cx="19.965" cy="19.965" r="19.965" stroke="none"/>
+        <circle cx="19.965" cy="19.965" r="19.465" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

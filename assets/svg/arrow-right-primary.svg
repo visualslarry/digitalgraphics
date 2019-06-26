@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="arrow-right-primary" transform="translate(13582 -20757)">
+    <g id="arrow-right" transform="translate(-13578.509 20765.113)">
+      <path id="Tracé_286" data-name="Tracé 286" d="M0,0H11.01" transform="translate(2.008 3.886)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="2"/>
+      <line id="Ligne_8" data-name="Ligne 8" x2="5.635" transform="translate(13.085 4.275) rotate(135)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="2"/>
+      <path id="Tracé_283" data-name="Tracé 283" d="M0,0H5.635" transform="translate(13.085 3.984) rotate(-135)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <g id="arrow-right-2" data-name="arrow-right" transform="translate(-13582 20757)">
+      <path id="Tracé_284" data-name="Tracé 284" d="M0,0H24V24H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>
